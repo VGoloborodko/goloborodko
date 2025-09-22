@@ -336,6 +336,7 @@ html {
 }
 
 //________________Кнопки
+
 .all-buttons {
   &__block {
     display: flex;
@@ -443,7 +444,7 @@ html {
     }
   }
 
-  &__box-dark-purple {
+  &__box-darkpurple {
     width: 155px;
     height: 8px;
     background: #3f028c;
@@ -471,7 +472,7 @@ html {
     }
   }
 
-  &__box-light-blue {
+  &__box-lightblue {
     width: 155px;
     height: 16px;
     background: #65bbdf;
@@ -499,7 +500,7 @@ html {
     }
   }
 
-  &__box-dark-orange {
+  &__box-darkorange {
     width: 155px;
     height: 20px;
     background: #d33706;
@@ -569,7 +570,7 @@ html {
     }
   }
 
-  &__box-dark-blue {
+  &__box-darkblue {
     width: 155px;
     height: 48px;
     background: #273a64;
@@ -579,21 +580,7 @@ html {
     }
 
     @include bp(sm) {
-      height: 24px;
-    }
-  }
-
-  &__box-opacity-green {
-    width: 155px;
-    height: 64px;
-    background: #00933e80;
-
-    @include bp(md) {
-      height: 40px;
-    }
-
-    @include bp(sm) {
-      height: 24px;
+      height: 32px;
     }
   }
 
@@ -611,10 +598,10 @@ html {
     }
   }
 
-  &__box-fuchsia {
+  &__box-orange {
     width: 155px;
     height: 80px;
-    background: #fa12ff;
+    background: #ff4f12;
 
     @include bp(md) {
       height: 64px;
@@ -639,31 +626,17 @@ html {
     }
   }
 
-  &__box-orange {
+  &__box-wine {
     width: 155px;
-    height: 150px;
-    background: #ff4f12;
+    height: 120px;
+    background: #bc104b;
 
     @include bp(md) {
-      height: 64px;
-    }
-
-    @include bp(sm) {
-      height: 32px;
-    }
-  }
-
-  &__box-pastel {
-    width: 155px;
-    height: 200px;
-    background: #e18484;
-
-    @include bp(md) {
-      height: 120px;
-    }
-
-    @include bp(sm) {
       height: 100px;
+    }
+
+    @include bp(sm) {
+      height: 80px;
     }
   }
 }
@@ -708,8 +681,8 @@ html {
   }
 }
 
-// sp-t-dark-purple
-.sp-t-dark-purple {
+// sp-t-darkpurple
+.sp-t-darkpurple {
   padding-top: 8px;
 
   @include bp(md) {
@@ -721,7 +694,7 @@ html {
   }
 }
 
-.sp-b-dark-purple {
+.sp-b-darkpurple {
   padding-bottom: 8px;
 
   @include bp(md) {
@@ -733,7 +706,7 @@ html {
   }
 }
 
-.sp-v-dark-purple {
+.sp-v-darkpurple {
   padding-top: 8px;
   padding-bottom: 8px;
 
@@ -788,8 +761,8 @@ html {
   }
 }
 
-// sp-t-light-blue
-.sp-t-light-blue {
+// sp-t-lightblue
+.sp-t-lightblue {
   padding-top: 16px;
 
   @include bp(md) {
@@ -801,7 +774,7 @@ html {
   }
 }
 
-.sp-b-light-blue {
+.sp-b-lightblue {
   padding-bottom: 16px;
 
   @include bp(md) {
@@ -813,7 +786,7 @@ html {
   }
 }
 
-.sp-v-light-blue {
+.sp-v-lightblue {
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -868,8 +841,8 @@ html {
   }
 }
 
-// sp-t-dark-orange
-.sp-t-dark-orange {
+// sp-t-darkorange
+.sp-t-darkorange {
   padding-top: 20px;
 
   @include bp(md) {
@@ -881,7 +854,7 @@ html {
   }
 }
 
-.sp-b-dark-orange {
+.sp-b-darkorange {
   padding-bottom: 20px;
 
   @include bp(md) {
@@ -893,7 +866,7 @@ html {
   }
 }
 
-.sp-v-dark-orange {
+.sp-v-darkorange {
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -1069,7 +1042,7 @@ html {
 }
 
 // sp-t-dark-blue
-.sp-t-dark-blue {
+.sp-t-darkblue {
   padding-top: 48px;
 
   @include bp(md) {
@@ -1077,11 +1050,11 @@ html {
   }
 
   @include bp(sm) {
-    padding-top: 24px;
+    padding-top: 32px;
   }
 }
 
-.sp-b-dark-blue {
+.sp-b-darkblue {
   padding-bottom: 48px;
 
   @include bp(md) {
@@ -1089,11 +1062,11 @@ html {
   }
 
   @include bp(sm) {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
   }
 }
 
-.sp-v-dark-blue {
+.sp-v-darkblue {
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -1103,48 +1076,8 @@ html {
   }
 
   @include bp(sm) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
-// sp-t-opacity-green
-.sp-t-opacity-green {
-  padding-top: 64px;
-
-  @include bp(md) {
-    padding-top: 40px;
-  }
-
-  @include bp(sm) {
-    padding-top: 24px;
-  }
-}
-
-.sp-b-opacity-green {
-  padding-bottom: 64px;
-
-  @include bp(md) {
-    padding-bottom: 40px;
-  }
-
-  @include bp(sm) {
-    padding-bottom: 24px;
-  }
-}
-
-.sp-v-opacity-green {
-  padding-top: 64px;
-  padding-bottom: 64px;
-
-  @include bp(md) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  @include bp(sm) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -1188,8 +1121,8 @@ html {
   }
 }
 
-// sp-t-fuchsia
-.sp-t-fuchsia {
+// sp-t-orange
+.sp-t-orange {
   padding-top: 80px;
 
   @include bp(md) {
@@ -1201,19 +1134,19 @@ html {
   }
 }
 
-.sp-b-fuchsia {
-  padding-bottom: 80px !important;
+.sp-b-orange {
+  padding-bottom: 80px;
 
   @include bp(md) {
-    padding-bottom: 64px !important;
+    padding-bottom: 64px;
   }
 
   @include bp(sm) {
-    padding-bottom: 40px !important;
+    padding-bottom: 40px;
   }
 }
 
-.sp-v-fuchsia {
+.sp-v-orange {
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -1237,7 +1170,7 @@ html {
   }
 
   @include bp(sm) {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 }
 
@@ -1249,7 +1182,7 @@ html {
   }
 
   @include bp(sm) {
-    padding-bottom: 48px;
+    padding-bottom: 64px;
   }
 }
 
@@ -1263,48 +1196,48 @@ html {
   }
 
   @include bp(sm) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-}
-
-// sp-t-orange
-.sp-t-orange {
-  padding-top: 150px;
-
-  @include bp(md) {
-    padding-top: 64px;
-  }
-
-  @include bp(sm) {
-    padding-top: 32px;
-  }
-}
-
-.sp-b-orange {
-  padding-bottom: 150px;
-
-  @include bp(md) {
-    padding-bottom: 64px;
-  }
-
-  @include bp(sm) {
-    padding-bottom: 32px;
-  }
-}
-
-.sp-v-orange {
-  padding-top: 150px;
-  padding-bottom: 150px;
-
-  @include bp(md) {
     padding-top: 64px;
     padding-bottom: 64px;
   }
+}
+
+// sp-t-wine
+.sp-t-wine {
+  padding-top: 120px;
+
+  @include bp(md) {
+    padding-top: 100px;
+  }
 
   @include bp(sm) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 80px;
+  }
+}
+
+.sp-b-wine {
+  padding-bottom: 120px !important;
+
+  @include bp(md) {
+    padding-bottom: 100px !important;
+  }
+
+  @include bp(sm) {
+    padding-bottom: 80px !important;
+  }
+}
+
+.sp-v-wine {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include bp(md) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include bp(sm) {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -1349,6 +1282,7 @@ html {
 }
 
 //________________Остальное
+
 .d-none {
   display: none;
 }
